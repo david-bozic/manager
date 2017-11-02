@@ -8,6 +8,7 @@ const INITAL_STATE = {
   password: ''
  };
 export default (state = INITAL_STATE, action) => {
+  console.log(action);
   switch (action.type) {
     case EMAIL_CHANGED:
       return { ...state, email: action.payload };
