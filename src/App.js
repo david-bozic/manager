@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import firebase from 'firebase';
+import Firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
 import LoginForm from './components/LoginForm';
@@ -16,9 +16,9 @@ const config = {
   projectId: 'manager-70877',
   storageBucket: 'manager-70877.appspot.com',
   messagingSenderId: '705570908030'
-
   };
-firebase.initializeApp(config);
+
+Firebase.initializeApp(config);
 }
 
   render() {
